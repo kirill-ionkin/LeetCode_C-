@@ -1,0 +1,38 @@
+// 495. Teemo Attacking
+// https://leetcode.com/problems/teemo-attacking/description/
+
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+#include <unordered_set>
+#include <unordered_map>
+#include <map>
+#include <set>
+
+#include <limits.h>
+
+
+using namespace std;
+
+
+class Solution {
+public:
+    int findPoisonedDuration(vector<int>& timeSeries, int duration) {
+        int n = timeSeries.size();
+
+        if (n == 0 || duration == 0)
+            return 0;
+        
+
+        int sum = 0;
+        for (int i = 0; i < n - 1; ++i)
+        {
+            if (timeSeries[i] + duration <= timeSeries[i + 1]) sum += duration;
+            else sum += (timeSeries[i + 1] - timeSeries[i]);
+        }
+
+        return sum + duration;
+    }
+};
