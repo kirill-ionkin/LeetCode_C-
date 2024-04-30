@@ -1,8 +1,10 @@
 # Ignore all
 *
 
-# But not cpp
+# But not .cpp, .go, .py
 !*.cpp
+!*.go
+!*.py
 # Or directories
 !*/
 !.gitignore
