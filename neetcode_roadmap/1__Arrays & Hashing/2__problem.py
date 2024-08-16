@@ -1,6 +1,8 @@
 # Is Anagram
 # https://neetcode.io/problems/is-anagram
 
+from typing import List, Tuple, Dict, Any
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         s_dict, t_dict = {}, {}

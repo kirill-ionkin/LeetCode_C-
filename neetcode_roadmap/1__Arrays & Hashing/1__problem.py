@@ -1,6 +1,8 @@
 # Duplicate Integer
 # https://neetcode.io/problems/duplicate-integer
 
+from typing import List, Tuple, Dict, Any
+
 class Solution:
     def hasDuplicate(self, nums: List[int]) -> bool:
         seen = set()
