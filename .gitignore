@@ -1,5 +1,6 @@
 # Ignore all
 *
+**/*.ipynb_checkpoints/
 
 # But not .cpp, .go, .py
 !*.cpp
@@ -9,3 +10,4 @@
 !*/
 !.gitignore
 !README.md
+!implementations.ipynb
